@@ -1,0 +1,31 @@
+lockfileVersion: '6.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@team/p2':
+        specifier: workspace:*
+        version: link:packages/p2
+      '@the-org/ui-web-ComponentA':
+        specifier: workspace:*
+        version: link:packages/ui-web/ComponentA
+      p1:
+        specifier: workspace:*
+        version: link:packages/p1
+
+  app/a1: {}
+
+  packages/p1: {}
+
+  packages/p2: {}
+
+  packages/ui-web/ComponentA: {}
+
+  packages/ui-web/ComponentB: {}
+
+  packages/ui-web/component-a: {}
