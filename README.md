@@ -79,3 +79,35 @@ to define where to resolve packages
 
 - `pnpm install` - creat a `pnpm-lock.yaml`
 - `node app/a1/index.js`
+
+## Next: create more packages
+
+- `mkdir packages packages/ui-web/ComponentA packages/ui-web/ComponentB ...`
+
+- `pnpm init`
+
+- edit `packages/ui-web/ComponentA/package.json`
+  -
+    ```js
+    {
+      "name": "@the-org/ui-web-ComponentA",
+      // ...
+    }
+    ```
+- edit `/root/package.json`
+  -
+    ```js
+    {
+      "@the-org/ui-web-ComponentA": "workspace:*"
+      // ...
+    }
+    ```
+
+- `touch packages/ui-web/ComponentA`
+  -
+    ```js
+    export default {
+      name: "I'm @the-org/ui-web-ComponentA!"
+    }
+    ```
+
