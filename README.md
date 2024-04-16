@@ -1,4 +1,4 @@
-# Simplest Mono Repo With pnpm
+# Simplest Mono-Repo with pnpm
 
 ## init a mono repo
 
